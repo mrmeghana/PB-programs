@@ -1,0 +1,32 @@
+//Sorcerers Sequence Program
+//Code contributed by M.R.Meghana
+public class Sorcerers_Sequence
+{
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int testcase=sc.nextInt();
+    while(testcase--!=0)
+    {
+      long n=sc.nextInt();
+      double temp=n;
+      //Here we are declaring temp as type double because "only if it is double type it can be passed to Math.sqrt(double variablename)
+      while(temp!=1)
+      {
+        if(temp%2==0)
+        {
+          //Be careful with typecasting to get expected output or else we'll get Run Time Errors
+          temp=long(Math.floor(Math.sqrt(temp)));
+          System.out.print((int)temp+" ");
+         }
+         else
+         {
+            temp=long(Math.floor(Math.sqrt(temp)*Math.sqrt(temp)*Math.sqrt(temp)));
+            System.out.print((long)temp+" ");
+         }
+         
+      }
+    }
+    System.out.print("\n");
+  }
+}
