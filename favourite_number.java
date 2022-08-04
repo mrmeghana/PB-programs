@@ -1,3 +1,5 @@
+//Code for Favourite Number program
+//Code contributed by M.R.Meghana
 import java.io.*;
 import java.util.*;
 import java.lang.*;
